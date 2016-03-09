@@ -13,33 +13,16 @@ $(document).ready(function(){
             }
         })
     }
-    
-    $('#instafeed').pongstgrm({
-      accessId:     '1282855892',
-      accessToken:  '1271812373.3e5c4aa.81e6712195f2462e9c933167433622a1'
-    });
 });
 
  //----------PRELOADER---------//
 $(window).load(function(){
-    $('.preloader').fadeOut("slow");
+    $('.loader').fadeOut("slow");
 });
-
-//--------COLLAPSE-----------//
-$('.navbar-collapse a').click(function(){
-    $(".navbar-collapse").collapse('hide');
-});
-
-
-//-------ACTIVE--------//
-$(document).ready(function(){
-    $('a[href="'+this.location.pathname+'"]').parent().addClass('active');
-});
-
 //----------HERO--------------//
 $(function(){
     function abso(){
-        $('#header').css({
+        $('#head').css({
             position:'relative',width:$(window).width(),height:$(window).height()
         });
     }
@@ -52,7 +35,7 @@ $(function(){
 //---------TYPING-------------//
 $(function(){
     $("#typed").typed({
-        strings: ["weddings.^1000","events.^1000","birthdays.^1000","graduations.^1000"],
+        strings: ["Front-End Developer.^1000","Android Developer.^1000","Web Developer.^1000"],
         typeSpeed: 0,
           startDelay: 2,
           contentType: 'text',
@@ -66,11 +49,5 @@ $(function(){
     initParallax();
     
     // ------- WOW ANIMATED ------ //
-  wow = new WOW(
-  {
-    mobile: false
-  });
-  wow.init(); 
-  Interdimensional.charge();  
-    $('.tlt').textillate();
+ new WOW().init();
 });
